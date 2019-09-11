@@ -1,0 +1,6 @@
+scratch/
+dist/
+node_modules/
+public/
+.fuse_hidden*
+.cache/
