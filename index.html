@@ -13,6 +13,14 @@
       * {
         box-sizing: border-box;
       }
+
+      :root {
+        background: #fff;
+        color: #0008;
+        font-size: max(16px, 1vw);
+        font-family: "Fira Code", "Fira Mono", monospace;
+      }
+      
       body {
         margin: 0;
         padding: 0;
@@ -20,13 +28,17 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: #fff;
-        color: #0004;
-        font-family: "Fira Code", "Fira Mono", monospace;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          background: #111;
+          color: #fff8;
+        }
       }
     </style>
 
   <body>
-    <p style="padding: 0 0 0 3ch;">Work in progress...</p>
+    <p style="padding: 0 0 0 3ch;">Work in progress 🚧</p>
   </body>
 </html>
