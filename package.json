@@ -1,11 +1,12 @@
 {
   "name": "scio.space",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "",
   "scripts": {
-    "build": "rm -Rf public && npm run build",
-    "deploy": "npx now --prod",
-    "dev": "npx now dev",
+    "start": "npx vercel dev",
+    "deploy": "npx vercel --prod",
+    "build": "",
+    "dev": "",
     "lint": "npx eslint src/**/*.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,37 +20,7 @@
     "url": "https://github.com/5310/scio.space/issues"
   },
   "homepage": "https://scio.space",
-  "dependencies": {
-  },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-decorators": "^7.4.4",
-    "@babel/preset-env": "^7.5.5",
-    "babel-eslint": "^10.0.2",
-    "babel-plugin-postcss-template-literals": "^1.0.0-alpha.1",
-    "eslint": "^6.1.0",
-    "eslint-config-standard": "^13.0.1",
-    "eslint-plugin-html": "^6.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^9.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "now": "^16.1.1",
-    "parcel": "^1.12.3",
-    "parcel-bundler": "^1.12.3",
-    "parcel-plugin-eslint": "^1.0.7",
-    "postcss": "^7.0.17",
-    "postcss-font-magician": "^2.2.2",
-    "postcss-html": "^0.36.0",
-    "postcss-implicit-var": "^0.0.1",
-    "postcss-insert": "^1.0.0",
-    "postcss-js": "^2.0.2",
-    "postcss-nested": "^4.1.2",
-    "postcss-nesting": "^7.0.1",
-    "postcss-syntax": "^0.36.2",
-    "stylelint": "^10.1.0",
-    "stylelint-config-standard": "^18.3.0"
+    "vercel": "^28.5.6"
   }
 }
